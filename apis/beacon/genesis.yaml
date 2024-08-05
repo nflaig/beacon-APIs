@@ -3,7 +3,7 @@ get:
   tags:
     - Beacon
     - ValidatorRequiredApi
-  summary: "Retrieve details of the chain's genesis."
+  summary: "Retrieve details of the chain's genesis." dasdasdqq
   description: "Retrieve details of the chain's genesis which can be used to identify chain."
   responses:
     "200":
