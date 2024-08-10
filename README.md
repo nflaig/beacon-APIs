@@ -68,16 +68,4 @@ redocly lint beacon-node-oapi.yaml
 
 ## Releasing
 
-1. Create and push tag
-
-   - Make sure `info.version` in `beacon-node-oapi.yaml` file is updated before tagging.  This will need to be a PR, and will get the release process started.
-   - CD will create github release and upload bundled spec file
-
-2. Create a second PR, containing the updated `index.html`. Also change back the `info.version` in `beacon-node-api.yaml` back to `Dev`
-
-   - The `index.html` file needs a new release entrypoint added to refer to the new release. Find the `urls` field, 
-     and add the new release as the first entry in the list.
-     Entry should be in following format(replace `<tag>` with real tag name from step 1.):
-```
-         {url: "./releases/<tag>/beacon-node-oapi.json", name: "<tag>"},
-```
+Create and push a tag. CD will create github release, upload bundled spec file and update other files like `index.html` and `CHANGES.md`.
