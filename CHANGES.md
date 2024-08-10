@@ -1,6 +1,5 @@
 # Recent Changes
 
-
 ## Development Version
 
 These endpoints have been added or updated since the last release.
